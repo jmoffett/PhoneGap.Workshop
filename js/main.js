@@ -14,12 +14,10 @@ var app = {
     },
 
     showAlert: function (message, title) {
-
         if (navigator.notification) {
-            navigator.notification.alert("navigator alert", null, title, 'OK');
-            //alert("browser alert");
+            navigator.notification.alert(message, null, title, 'OK');
         } else {
-            //alert(title ? (title + ": " + message) : message);
+            alert(title ? (title + ": " + message) : message);
         }
     },
 
