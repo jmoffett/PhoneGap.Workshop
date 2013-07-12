@@ -17,7 +17,7 @@ var app = {
 
         if (navigator.notification) {
             navigator.notification.alert("navigator alert", null, title, 'OK');
-            alert("browser alert");
+            //alert("browser alert");
         } else {
             //alert(title ? (title + ": " + message) : message);
         }
